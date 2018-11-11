@@ -6,12 +6,10 @@ pipeline {
                 sh 'node --check index.js'
             }
         }
-        stages {
-            stage('install') {
-                steps {
-                    sh 'npm --version'
-                    sh 'npm install'
-                }
+        stage('install') {
+            steps {
+                sh 'npm --version'
+                sh 'npm install'
             }
         stage('build') {
             steps {
