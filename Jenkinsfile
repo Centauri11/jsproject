@@ -1,12 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('install') {
+        stage('Syntax Check') {
             steps {
-                sh 'npm --version'
-                sh 'npm install'
+                sh 'node --check index.js'
             }
         }
+        stages {
+            stage('install') {
+                steps {
+                    sh 'npm --version'
+                    sh 'npm install'
+                }
+            }
         stage('build') {
             steps {
                 sh 'echo Building'
