@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Centauri11/jsproject/issues"
   },
-  "homepage": "https://github.com/Centauri11/jsproject#readme"
+  "homepage": "https://github.com/Centauri11/jsproject#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
