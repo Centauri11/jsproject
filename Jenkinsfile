@@ -1,12 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('install') {
             steps {
                 sh 'npm --version'
                 sh 'npm install'
-                sh 'node index.js'
             }
+        stage('build') {
+            steps {
+                sh 'echo Building'
+            }
+
+
         }
     }
 }
