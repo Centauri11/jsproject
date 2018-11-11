@@ -5,7 +5,7 @@ var app = express()
 app.get('/', function (req, res) {
   res.send('hello worlds of the world')
 })
-var port =  process env.PORT || 3000
+var port =  process.env.PORT || 3000
 if (!module.parent) {
     app.listen(port, function () {
         console.log("listening on port"+port+"!")
